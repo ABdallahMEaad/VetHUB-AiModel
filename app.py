@@ -9,7 +9,7 @@ import io
 def custom_loss_deserializer(config):
     return tf.keras.losses.deserialize({'class_name': 'SparseCategoricalCrossentropy', 'config': config})
 
-model = tf.keras.models.load_model('D:/4s.h5', custom_objects={'SparseCategoricalCrossentropy': custom_loss_deserializer})
+model = tf.keras.models.load_model('./4s.h5', custom_objects={'SparseCategoricalCrossentropy': custom_loss_deserializer})
 
 # Define class names
 class_names = ["Foot and Mouth Disease", "Infectious Bovine Keratoconjunctivitis", "Lumpy Skin", "Normal"]
