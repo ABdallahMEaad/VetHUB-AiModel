@@ -60,7 +60,7 @@ async def predict_endpoint(files: List[UploadFile] = File(...)):
             contents = await file.read()
             image = Image.open(io.BytesIO(contents)).convert("RGB")
             predicted_class, confidence = predict(image)
-            result = {"filename": file.filename, "predicted_class": predicted_class, "confidence": confidence}
+            result = {"predicted_class": predicted_class}
             if predicted_class in class_info:
                 result["class_info"] = class_info[predicted_class]
             results.append(result)
