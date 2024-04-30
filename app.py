@@ -31,9 +31,6 @@ class_info = {
         "Cause": "Caused by a virus.",
         "Symptoms": "Firm nodules on the skin, fever, loss of appetite.",
         "Treatment": "Supportive care, vaccination for prevention."
-    },
-    "Normal": {
-        "Info": "The image appears to be normal, without any detected disease."
     }
 }
 
