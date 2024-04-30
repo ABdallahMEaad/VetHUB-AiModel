@@ -18,24 +18,31 @@ class_names = ["Foot and Mouth Disease", "Infectious Bovine Keratoconjunctivitis
 # Define class-specific information
 class_info = {
     "Foot and Mouth Disease": {
-        "Cause": "Caused by a virus.",
-        "Symptoms": "Fever, blisters on the tongue and lips, drooling, lameness.",
-        "Treatment": "No specific treatment, supportive care, vaccination for prevention."
+        "Cause": "Caused by a virus (Aphthovirus) from the Picornaviridae family.",
+        "Symptoms": "Fever, blisters (vesicles) on the tongue, lips, and in the mouth, excessive salivation, lameness, reluctance to move, weight loss.",
+        "Transmission": "Direct contact with infected animals, contaminated feed, water, equipment, or through aerosols.",
+        "Prevention": "Vaccination is crucial for prevention. Strict biosecurity measures to limit spread.",
+        "Treatment": "No specific treatment, supportive care (hydration, nutrition), rest, isolation of infected animals."
     },
     "Infectious Bovine Keratoconjunctivitis": {
-        "Cause": "Bacterial infection.",
-        "Symptoms": "Watery eyes, squinting, corneal ulceration.",
-        "Treatment": "Antibiotics, eye ointments, fly control."
+        "Cause": "Caused by the bacterium Moraxella bovis.",
+        "Symptoms": "Watery eyes, squinting, corneal ulceration, photophobia (sensitivity to light), conjunctivitis (inflammation of the conjunctiva).",
+        "Transmission": "Direct contact with infected animals, flies (Mechanical transmission).",
+        "Prevention": "Fly control measures (insecticides, traps), isolation of affected animals, maintaining good hygiene.",
+        "Treatment": "Antibiotics (oxytetracycline, florfenicol), eye ointments (with antibiotics and corticosteroids), pain management, supportive care."
     },
     "Lumpy Skin": {
-        "Cause": "Caused by a virus.",
-        "Symptoms": "Firm nodules on the skin, fever, loss of appetite.",
-        "Treatment": "Supportive care, vaccination for prevention."
+        "Cause": "Caused by the poxvirus.",
+        "Symptoms": "Firm nodules (lesions) on the skin, fever, loss of appetite, lesions on the mucous membranes (mouth, eyes, genitals).",
+        "Transmission": "Direct contact with infected animals, contaminated objects.",
+        "Prevention": "Vaccination is essential for prevention. Strict biosecurity measures.",
+        "Treatment": "Supportive care, vaccination for prevention, antiviral medications (cidofovir, imiquimod), managing secondary bacterial infections."
     },
     "Normal": {
         "Info": "The image appears to be normal, without any detected disease."
     }
 }
+
 
 # Define FastAPI app
 app = FastAPI()
