@@ -1,4 +1,5 @@
 from fastapi import FastAPI, UploadFile, File
+from fastapi.middleware.cors import CORSMiddleware
 from typing import List
 import numpy as np
 from PIL import Image
@@ -67,3 +68,12 @@ async def predict_endpoint(files: List[UploadFile] = File(...)):
         except Exception as e:
             results.append({"filename": file.filename, "error": str(e)})
     return results
+
+# Configure CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Replace "*" with the origins you want to allow
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
