@@ -277,9 +277,9 @@ http://127.0.0.1:8000/redoc
 
 QA Engineer | Network Engineer | AI & Computer Vision Enthusiast
 
-GitHub: https://github.com/yourusername
+GitHub: https://github.com/ABdallahMEaad
 
-LinkedIn: https://linkedin.com/in/yourprofile
+LinkedIn:https://www.linkedin.com/in/abdallah-meaad/?skipRedirect=true
 
 ---
 
